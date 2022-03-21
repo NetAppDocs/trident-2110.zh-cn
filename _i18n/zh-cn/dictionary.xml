@@ -862,7 +862,6 @@
   <block id="a67cf6b087ff88dbfacec8375928995c" category="cell">`debug`</block>
   <block id="4f72bc786a1a01d5a1a8bc09d33334cc" category="cell">为 Astra Trident 启用调试</block>
   <block id="68934a3e9455fa72420237eb05902327" category="cell">false</block>
-  <block id="16e20a5ba5cd6442f3cdd49b16e8a5f3" category="cell">`使用 IPv6`</block>
   <block id="3dd791c4864e77ae6cf11572e2d7b374" category="cell">安装基于 IPv6 的 Astra Trident</block>
   <block id="077e99fe42ced522b462656cffffe09c" category="cell">`k8sTimeout`</block>
   <block id="4448b73eac083e33b7142f0e5790fac5" category="cell">Kubernetes 操作超时</block>
@@ -3118,4 +3117,5 @@
   <block id="324fb1352ffffb105d10013810c42896" category="sidebar">Kubernetes 和 Astra Trident 对象</block>
   <block id="f14894e4c400a400c02367258a93029a" category="sidebar">适用于 Docker 的 Astra Trident</block>
   <block id="e08bfc79c5202517b3814efd6e82fb2c" category="sidebar">升级或卸载 Trident</block>
+  <block id="d293f031e5664526b25f3a65012401b7" category="cell">`IPv6`</block>
 </blocks>
