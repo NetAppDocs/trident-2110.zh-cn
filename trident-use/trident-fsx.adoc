@@ -6,6 +6,7 @@ summary: 通过将 Astra Trident 与适用于 NetApp ONTAP 的 Amazon FSx 结合
 ---
 = 将 Astra Trident 与适用于 NetApp ONTAP 的 Amazon FSX 结合使用
 :hardbreaks:
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -94,7 +95,7 @@ aws fsx describe-storage-virtual-machines --region <file system region>
 ----
 
 
-. 创建并安装用于身份验证的证书。如果您使用的是 `ontap-san` 后端，请参见 link:ontap-san.html["此处"^]。如果您使用的是 `ontap-nas` 后端，请参见 。
+. 创建并安装用于身份验证的证书。如果您使用的是 `ontap-san` 后端，请参见 link:ontap-san.html["此处"^]。如果您使用的是 `ontap-nas` 后端，请参见 link:ontap-nas.html["此处"^]。
 +
 
 NOTE: 您可以从可以访问文件系统的任何位置使用 SSH 登录到文件系统（例如，安装证书）。使用 `fsxadmin` 用户，创建文件系统时配置的密码以及 `AWS FSx describe 文件系统` 中的管理 DNS 名称。

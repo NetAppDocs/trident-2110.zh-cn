@@ -6,6 +6,7 @@ summary: Astra Trident 会显示多个命令行选项并通过某些端口进行
 ---
 = 命令行选项
 :hardbreaks:
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
