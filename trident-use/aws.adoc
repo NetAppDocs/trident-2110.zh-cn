@@ -16,6 +16,7 @@ summary: 了解如何使用提供的示例配置将 Cloud Volumes Service for AW
 
 NOTE: Cloud Volumes Service for AWS 不支持小于 100 GB 的卷。如果请求的卷较小， Trident 会自动创建 100 GB 的卷。
 
+.您需要的内容
 以配置和使用 https://cloud.netapp.com/cloud-volumes-service-for-aws?utm_source=NetAppTrident_ReadTheDocs&utm_campaign=Trident["适用于 AWS 的 Cloud Volumes Service"^] 后端，您需要满足以下要求：
 
 * 配置了 NetApp CVS 的 AWS 帐户

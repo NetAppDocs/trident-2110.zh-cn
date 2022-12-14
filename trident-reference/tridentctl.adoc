@@ -51,7 +51,7 @@ flags
 
 
 
-== 创建
+== `create`
 
 您可以使用 run the `create` 命令向 Astra Trident 添加资源。
 
@@ -64,7 +64,7 @@ Usage:
 
 
 
-== 删除
+== `delete`
 
 您可以运行 `delete` 命令从 Astra Trident 中删除一个或多个资源。
 
@@ -84,7 +84,7 @@ Usage:
 
 
 
-== 获取
+== `get`
 
 您可以运行 `get` 命令从 Astra Trident 获取一个或多个资源。
 
@@ -103,7 +103,7 @@ Usage:
 
 
 
-== 映像
+== `images`
 
 您可以运行 `images` 标志来打印包含 Astra Trident 所需容器映像的表。
 
@@ -116,7 +116,7 @@ Usage:
 
 
 
-== 导入卷
+== `import volume`
 
 您可以运行 `import volume` 命令将现有卷导入到 Astra Trident 。
 
@@ -136,7 +136,7 @@ flags
 
 
 
-== 安装
+== `install`
 
 您可以运行 `install` 标志来安装 Astra Trident 。
 
@@ -168,7 +168,7 @@ flags
 
 
 
-== 日志
+== `logs`
 
 您可以运行 `logs` 标志从 Astra Trident 打印日志。
 
@@ -189,7 +189,7 @@ flags
 
 
 
-== 发送
+== `send`
 
 您可以运行 `send` 命令从 Astra Trident 发送资源。
 
@@ -202,7 +202,7 @@ Usage:
 
 
 
-== 卸载
+== `卸载`
 
 您可以运行 `uninstall` 标志来卸载 Astra Trident 。
 
@@ -215,7 +215,7 @@ Usage:
 
 
 
-== 更新
+== `update`
 
 您可以运行 `update` 命令来修改 Astra Trident 中的资源。
 
@@ -228,7 +228,7 @@ Usage:
 
 
 
-== 升级
+== `upgrade`
 
 您可以运行 `upgrade` 命令来升级 Astra Trident 中的资源。
 
@@ -241,7 +241,7 @@ tridentctl upgrade [option]
 
 
 
-== version
+== `ve版本`
 
 您可以运行 `version` 标志来打印 `tridentctl` 的版本以及正在运行的 Trident 服务。
 
