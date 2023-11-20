@@ -17,7 +17,7 @@ summary: 使用此处提供的指针排除安装和使用 Astra Trident 时可�
 NOTE: 要获得有关 Astra Trident 的帮助，请使用 `tridentctl logs -a -n trident` 创建支持包，并将其发送到 `NetApp 支持 < 获取帮助 >` 。
 
 
-TIP: 提示：有关故障排除文章的完整列表，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Trident_Kubernetes["NetApp 知识库（需要登录）"^]。您还可以找到有关排除与 Astra 相关的问题的信息 https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Astra["此处"^]。
+TIP: 有关故障排除文章的完整列表，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Trident_Kubernetes["NetApp 知识库（需要登录）"^]。您还可以找到有关排除与 Astra 相关的问题的信息 https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Astra["此处"^]。
 
 
 
@@ -64,7 +64,7 @@ $ helm upgrade <name> trident-operator-21.07.1-custom.tgz --set tridentDebug=tru
 ----
 * 您还可以通过在后端定义中包含 `debugTraceFlags` 来获取每个后端的调试日志。例如，包括 `debugTraceFlags ： ｛ "api" ： true ， "method " ： true ， ｝` 以获取 Trident 日志中的 API 调用和方法遍历。现有后端可以已配置 `debugTraceFlags` 并配置 `tridentctl 后端更新` 。
 * 使用 RedHat CoreOS 时，请确保在工作节点上启用了 `iscsid` 并默认启动。可以使用 OpenShift MachineConfigs 或修改点燃模板来完成此操作。
-* 使用 Trident 时可能会遇到的一个常见问题 https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp Files"] 租户和客户端密码来自权限不足的应用程序注册。有关 Trident 要求的完整列表，请参见 link:../trident-backend/anf.html["Azure NetApp Files"] Configuration
+* 使用 Trident 时可能会遇到的一个常见问题 https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp Files"] 租户和客户端密码来自权限不足的应用程序注册。有关 Trident 要求的完整列表，请参见 link:trident-use/anf.html["Azure NetApp Files"] Configuration
 * 如果在将 PV 挂载到容器时出现问题，请确保 `rpcbind` 已安装并正在运行。对主机操作系统使用所需的软件包管理器，并检查 `rpcbind` 是否正在运行。您可以通过运行 `systemctl status rpcbind` 或其等效项来检查 `rpcbind` 服务的状态。
 * 如果 Trident 后端报告其处于 `Failed` 状态，尽管之前已正常工作，但这可能是由于更改了与后端关联的 SVM/ 管理员凭据所致。使用 `tridentctl update backend` 更新后端信息或放弃 Trident Pod 将修复此问题描述。
 * 如果要升级 Kubernetes 集群和 / 或 Trident 以使用测试版卷快照，请确保已完全删除所有现有的 alpha Snapshot CRS 。然后，您可以使用 `tridentctl obviate alpha-snapshot-crd` 命令删除 alpha snapshot CRD 。请参见 https://netapp.io/2020/01/30/alpha-to-beta-snapshots/["本博客"] 了解迁移 alpha 快照所涉及的步骤。
